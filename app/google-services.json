@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "395188542346",
+    "project_id": "taqreeb-pro",
+    "storage_bucket": "taqreeb-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395188542346:android:1e3c182bbe4e983da8c673",
+        "android_client_info": {
+          "package_name": "com.official.taqreebpro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAKqQ49SQpJqwP3gM9qaF7wKXnOUFKwUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rjjo9z0hfszn"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@color/white"
+                android:layout_marginBottom="26dp"
+                android:orientation="vertical">
+                <!-- Add any content if needed -->
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/rg0djm2cys8"
+                app:shapeAppearanceOverlay="@style/cr52"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_marginBottom="51dp"
+                android:layout_marginHorizontal="105dp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="fitXY" />
+
+            <!-- Text: Enter the Code received in mail -->
+            <TextView
+                android:id="@+id/rtezvgaegi7"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="79dp"
+                android:layout_marginBottom="46dp"
+                android:gravity="center"
+                android:text="Enter the Code received in mail"
+                android:textColor="#515151"
+                android:textSize="14sp" />
+
+            <!-- Text: 6-digit code -->
+            <TextView
+                android:id="@+id/ro7ql56z5jjl"
+                android:textColor="#515151"
+                android:textSize="12sp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="59dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="6-digit code" />
+
+            <!-- Digit input layout -->
+            <LinearLayout
+                android:id="@+id/rwaju3ityuxq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="63dp"
+                android:layout_marginHorizontal="53dp"
+                android:orientation="horizontal">
+
+                <!-- Sample digit input block -->
+                <EditText
+                    android:id="@+id/etOtp1"
+                    android:layout_width="34dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/cr7bfff0f0f0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:orientation="vertical">
+                    <!-- Add content if needed -->
+                </EditText>
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- TextView in between blocks -->
+                <TextView
+                    android:id="@+id/rw92jhitpyds"
+                    android:textColor="#515151"
+                    android:textSize="16sp"
+                    android:layout_marginTop="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="-" />
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- Repeat for other digit blocks -->
+                <EditText
+                    android:id="@+id/etOtp2"
+                    android:layout_width="34dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/cr7bfff0f0f0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:orientation="vertical">
+                    <!-- Add content if needed -->
+                </EditText>
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- TextView in between blocks -->
+                <TextView
+                    android:id="@+id/rpo1n0a6un2g"
+                    android:textColor="#515151"
+                    android:textSize="16sp"
+                    android:layout_marginTop="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="-" />
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- Repeat for other digit blocks -->
+                <EditText
+                    android:id="@+id/etOtp3"
+                    android:layout_width="34dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/cr7bfff0f0f0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:orientation="vertical">
+                    <!-- Add content if needed -->
+                </EditText>
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- TextView in between blocks -->
+                <TextView
+                    android:id="@+id/rfuz58mkbn8o"
+                    android:textColor="#515151"
+                    android:textSize="16sp"
+                    android:layout_marginTop="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="-" />
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- Repeat for other digit blocks -->
+                <EditText
+                    android:id="@+id/etOtp4"
+                    android:layout_width="34dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/cr7bfff0f0f0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:orientation="vertical">
+                    <!-- Add content if needed -->
+                </EditText>
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- TextView in between blocks -->
+                <TextView
+                    android:id="@+id/rqij6yphwegi"
+                    android:textColor="#515151"
+                    android:textSize="16sp"
+                    android:layout_marginTop="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="-" />
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- Repeat for other digit blocks -->
+                <EditText
+                    android:id="@+id/etOtp5"
+                    android:layout_width="34dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/cr7bfff0f0f0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:orientation="vertical">
+                    <!-- Add content if needed -->
+                </EditText>
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- TextView in between blocks -->
+                <TextView
+                    android:id="@+id/r0a7z3ohxobku"
+                    android:textColor="#515151"
+                    android:textSize="16sp"
+                    android:layout_marginTop="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="-" />
+
+                <!-- Space between blocks -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- Repeat for other digit blocks -->
+                <EditText
+                    android:id="@+id/etOtp6"
+                    android:layout_width="34dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/cr7bfff0f0f0"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:orientation="vertical">
+                    <!-- Add content if needed -->
+                </EditText>
+
+            </LinearLayout>
+
+            <!-- Proceed button -->
+            <LinearLayout
+                android:id="@+id/btnProceed"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/cr5bffc66475"
+                android:paddingVertical="7dp"
+                android:layout_marginBottom="244dp"
+                android:layout_marginHorizontal="128dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/r4s8x3zqxsul"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Proceed" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Centered ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

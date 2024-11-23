@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Taqreeb Pro</string>
+    <string name="virtual_space_to_book_your_events">Virtual Space To Book Your Events</string>
+    <string name="forgot_password_no_worries">Forgot Password? No Worries</string>
+    <string name="enter_email">Enter email</string>
+    <string name="email_to_receive_code">Email to receive code</string>
+    <string name="send_code">Send Code</string>
+    <string-array name="cities_array">
+        <item>Islamabad</item>
+        <item>Rawalpindi</item>
+        <!-- Add more cities as needed -->
+    </string-array>
+    <string-array name="categories_array">
+        <item>Marquee</item>
+        <item>Photographer</item>
+    </string-array>
+
+</resources>

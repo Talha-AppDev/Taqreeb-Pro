@@ -1,0 +1,410 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/rwm8og6hvewh"
+        android:layout_width="125dp"
+        android:layout_height="92dp"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/cr52" />
+
+    <TextView
+        android:id="@+id/rbfz6m3afxsd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Virtual Space To Book Your Events"
+        android:textColor="#515151"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/rwm8og6hvewh"
+        app:layout_constraintStart_toStartOf="@+id/rwm8og6hvewh"
+        app:layout_constraintTop_toBottomOf="@+id/rwm8og6hvewh" />
+
+
+    <TextView
+        android:id="@+id/rxydmwssvh6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter email"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/rbfz6m3afxsd" />
+
+    <TextView
+        android:id="@+id/rkswmibdga3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Phone number"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginHorizontal="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rkswmibdga3b">
+
+        <EditText
+            android:id="@+id/etCountryCode"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@drawable/cr7bfff0f0f0"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="  +92"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/cr7bfff0f0f0"
+            android:hint="+92-***"
+            android:inputType="phone"
+            android:textColor="#FFC66475"
+            android:textColorHint="#CCCCCC"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rkswmibdga3b" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rbdotqia6h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Retype Password "
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/r4w9o31eowni"
+        app:layout_constraintTop_toBottomOf="@+id/rqqm4hea0nvm_categories" />
+
+
+    <LinearLayout
+        android:id="@+id/r4w9o31eowni"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/cr7bfff0f0f0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbdotqia6h">
+
+        <!-- EditText for retyping the password -->
+        <EditText
+            android:id="@+id/etPassword2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Retype Password"
+            android:inputType="textPassword"
+            android:textColor="#FFC66475"
+            android:textColorHint="#CCCCCC"
+            android:textSize="16sp" />
+
+        <!-- ImageView to toggle password visibility -->
+        <ImageView
+            android:id="@+id/ivHide2"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_eye" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/rrlzd8d9rx9r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:text="Select City"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/srCity_ll"
+        app:layout_constraintTop_toBottomOf="@+id/r4w9o31eowni" />
+
+    <TextView
+        android:id="@+id/rs60rzc31kdp_address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Address"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etAddress"
+        app:layout_constraintTop_toBottomOf="@+id/srCity_ll" />
+
+    <TextView
+        android:id="@+id/rs60rzc31kdp_categories_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select Category"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/srCategory_ll"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+    <LinearLayout
+        android:id="@+id/rqqm4hea0nvm_categories"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/cr7bfff0f0f0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reusrhv62bbp">
+
+        <!-- EditText for strong password input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Strong Password"
+            android:inputType="textPassword"
+            android:textColor="#FFC66475"
+            android:textColorHint="#CCCCCC"
+            android:textSize="16sp" />
+
+        <!-- ImageView to toggle password visibility -->
+        <ImageView
+            android:id="@+id/ivHide"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_eye" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/rs60rzc31kdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Company Name"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etCompany"
+        app:layout_constraintTop_toBottomOf="@+id/srCategory_ll" />
+
+    <LinearLayout
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="145dp"
+        android:background="@drawable/cr5bffc66475"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingVertical="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etCompany"
+        app:layout_constraintStart_toStartOf="@+id/etCompany"
+        app:layout_constraintTop_toBottomOf="@+id/etCompany">
+
+        <TextView
+            android:id="@+id/rpz2oog9jbvf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCompany"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/cr7bfff0f0f0"
+        android:hint="Enter your Company name"
+        android:textColor="#FFC66475"
+        android:textColorHint="#CCCCCC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rs60rzc31kdp" />
+
+
+    <LinearLayout
+        android:id="@+id/srCategory_ll"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_weight="1"
+        android:background="@drawable/cr7bfff0f0f0"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rs60rzc31kdp_categories_label">
+
+
+        <Spinner
+            android:id="@+id/srCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cr7bfff0f0f0"
+            android:entries="@array/categories_array"
+            />
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:src="@drawable/img"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/cr7bfff0f0f0"
+        android:hint="Enter your address"
+        android:textColor="#FFC66475"
+        android:textColorHint="#CCCCCC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rs60rzc31kdp_address_label" />
+
+    <LinearLayout
+        android:id="@+id/srCity_ll"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_weight="1"
+        android:background="@drawable/cr7bfff0f0f0"
+        android:paddingHorizontal="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rrlzd8d9rx9r">
+
+
+        <Spinner
+            android:id="@+id/srCity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cr7bfff0f0f0"
+            android:entries="@array/cities_array"
+            android:outlineAmbientShadowColor="@color/black"
+            android:paddingHorizontal="8dp"
+            />
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:src="@drawable/img"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/cr7bfff0f0f0"
+        android:hint="***@gmail.com"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFC66475"
+        android:textColorHint="#CCCCCC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rxydmwssvh6" />
+
+    <TextView
+        android:id="@+id/reusrhv62bbp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/rqqm4hea0nvm_categories"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
