@@ -40,10 +40,11 @@
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="100dp"
-        android:layout_marginEnd="22dp"
+        android:layout_marginEnd="35dp"
         android:height="40dp"
+        android:paddingLeft="20dp"
         android:background="#AAD5D0D0"
         android:hint="Company Name"
         android:textColor="#FFC66475"
@@ -54,25 +55,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/r5l02ltdrcg9" />
 
-    <ImageView
-        android:id="@+id/iv_eye"
-        android:layout_width="19dp"
-        android:layout_height="19dp"
-        android:layout_marginEnd="24dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/ic_eye"
-        app:layout_constraintBottom_toBottomOf="@+id/etEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/etEmail" />
 
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginStart="35dp"
+        android:paddingLeft="20dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="22dp"
+        android:layout_marginEnd="35dp"
         android:height="40dp"
         android:background="#AAD5D0D0"
         android:hint="Password"
@@ -89,11 +81,11 @@
         android:id="@+id/iv1_eye"
         android:layout_width="19dp"
         android:layout_height="19dp"
-        android:layout_marginEnd="24dp"
         android:scaleType="fitXY"
+        android:layout_marginRight="20dp"
         android:src="@drawable/ic_eye"
         app:layout_constraintBottom_toBottomOf="@+id/etPassword"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
         app:layout_constraintTop_toTopOf="@+id/etPassword" />
 
 
@@ -132,7 +124,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="120dp"
-        android:layout_marginStart="86dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="68dp"
         android:text="Don't have an Account?"
         android:textColor="@color/black"
