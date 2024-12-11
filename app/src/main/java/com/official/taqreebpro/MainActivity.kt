@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show()
             }
         }
-        binding.ivEye.setOnClickListener {
+        binding.iv1Eye.setOnClickListener {
             togglePasswordVisibility()
         }
     }

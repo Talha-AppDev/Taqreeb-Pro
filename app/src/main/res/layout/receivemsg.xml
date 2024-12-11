@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="16dp"
+        android:layout_height="20dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/rtail"
+        app:layout_constraintEnd_toStartOf="@+id/txtmsg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtmsg" />
+
+    <TextView
+        android:id="@+id/txtmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rbox"
+        android:maxWidth="260dp"
+        android:paddingLeft="8dp"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="2dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="18dp"
+        android:text="This is my message to you. see this. and inform me about the recent developments of the mobile applications. all the info shoudl be given."
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.2" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="00:22 AM"
+        android:textColor="@color/white"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtmsg"
+        app:layout_constraintEnd_toEndOf="@+id/txtmsg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

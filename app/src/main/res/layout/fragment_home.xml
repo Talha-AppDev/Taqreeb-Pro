@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:clipToPadding="false"
+    tools:context=".homeFragment">
+
+    <!-- Company Logo -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/rxnndwgl1ks"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginHorizontal="105dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        app:shapeAppearanceOverlay="@style/cr52" />
+
+    <!-- Company Name -->
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="LE-Grand Marquee"
+        android:textColor="#515151"
+        android:textSize="24sp" />
+
+    <!-- Upcoming Events Section -->
+    <LinearLayout
+        android:id="@+id/rmp5ev2qde6i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginHorizontal="27dp"
+        android:background="@drawable/cr10bfff0f0f0"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:paddingTop="13dp"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:id="@+id/rso7mek3ll9k"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginHorizontal="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rm6ikvq738va"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upcoming Events Today"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- Spacer View -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Events Counter -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rymgt3c800gl_rl"
+                android:layout_width="33dp"
+                android:layout_height="33dp">
+
+                <View
+                    android:id="@+id/eclipseToday"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@drawable/ellipse_221"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/eclipseToday" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bookings for Next Week Section -->
+    <LinearLayout
+        android:id="@+id/rh7smonavyyh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginHorizontal="27dp"
+        android:background="@drawable/cr10bfff0f0f0"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:paddingTop="13dp"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:id="@+id/r66suyqvfhwe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginHorizontal="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rq4iamvmpzw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookings For Next Week"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- Spacer View -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Bookings Counter -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/r6wz9lo1bkir_rl"
+                android:layout_width="33dp"
+                android:layout_height="33dp">
+
+                <View
+                    android:id="@+id/eclipseNextWeek"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@drawable/ellipse_221"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/eclipseNextWeek" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Total Revenue Section -->
+    <LinearLayout
+        android:id="@+id/r9oj1kocqe8n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="143dp"
+        android:layout_marginHorizontal="29dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/cr5bffffffff"
+        android:paddingVertical="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ribyy36x763"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Revenue this month"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Notification Icon -->
+    <RelativeLayout
+        android:id="@+id/rg3zcy7qawn"
+        android:layout_width="28dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/r55ffs2ez497"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_notification" />
+    </RelativeLayout>
+
+</LinearLayout>
