@@ -16,12 +16,22 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var firestore: FirebaseFirestore
     private var isPasswordVisible = false
+    private lateinit var sessionManager: SessionManager
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        sessionManager = SessionManager(this)
+
+        // Check if the user is already logged in
+        if (sessionManager.isLoggedIn()) {
+            // Redirect to HomeActivity if already logged in
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+        }
         // Initialize Firestore
         firestore = FirebaseFirestore.getInstance()
 
@@ -71,6 +81,7 @@ class MainActivity : AppCompatActivity() {
                     val storedPassword = document.getString("password")
                     if (storedPassword == password) {
                         // Password matches, login successful
+                        sessionManager.setLoginState(true)
                         val intent = Intent(this, HomeActivity::class.java)
                         intent.putExtra("company", marqueeName)  // Passing marqueeName to HomeActivity
                         startActivity(intent)

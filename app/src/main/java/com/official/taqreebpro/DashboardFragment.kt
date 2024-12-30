@@ -14,6 +14,7 @@ class DashboardFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var binding: FragmentDashboardBinding
+    private lateinit var sessionManager: SessionManager
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +33,8 @@ class DashboardFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentDashboardBinding.inflate(inflater, container, false)
 
+
+        sessionManager  SessionManager(requireContext())
         // Set up the logout button click listener
         binding.btnLogout.setOnClickListener {
             // Perform logout operation
@@ -41,6 +44,7 @@ class DashboardFragment : Fragment() {
             Toast.makeText(requireContext(), "You have been logged out", Toast.LENGTH_SHORT).show()
 
             // Redirect to the login activity or fragment after signing out
+            sessionManager.setLoginState(false)
             val intent = Intent(requireContext(), MainActivity::class.java)
             startActivity(intent)
             requireActivity().finish() // Finish the current activity to prevent going back
