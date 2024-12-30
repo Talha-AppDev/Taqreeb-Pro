@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.official.taqreebpro.databinding.FragmentInboxBinding
 
-class inboxFragment : Fragment() {
+class InboxFragment : Fragment() {
     private lateinit var binding: FragmentInboxBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

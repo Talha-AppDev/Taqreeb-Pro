@@ -8,6 +8,7 @@ import android.net.NetworkCapabilities
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import android.util.Log
 import android.view.View
 import android.view.WindowInsets
@@ -23,6 +24,8 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignUpBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var number: String
+    private var isPasswordVisible = false
+    private var isPasswordVisible2 = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +54,34 @@ class SignUpActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Please Enter the Number", Toast.LENGTH_LONG).show()
             }
+        }
+        binding.ivHide.setOnClickListener {
+            if (isPasswordVisible) {
+                // Hide password
+                binding.etPassword.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+            } else {
+                // Show password
+                binding.etPassword.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+            }
+
+            // Move the cursor to the end of the text
+            binding.etPassword.setSelection(binding.etPassword.text.length)
+
+            isPasswordVisible = !isPasswordVisible
+        }
+        binding.ivHide2.setOnClickListener {
+            if (isPasswordVisible2) {
+                // Hide password
+                binding.etPassword2.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+            } else {
+                // Show password
+                binding.etPassword2.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+            }
+
+            // Move the cursor to the end of the text
+            binding.etPassword2.setSelection(binding.etPassword2.text.length)
+
+            isPasswordVisible2 = !isPasswordVisible2
         }
     }
 
@@ -148,6 +179,21 @@ class SignUpActivity : AppCompatActivity() {
     private fun isValidName(name: String): Boolean {
         val nameRegex = "^[\\p{L}\\s'.-]{3,30}$"
         return name.matches(nameRegex.toRegex())
+    }
+
+    private fun togglePasswordVisibility() {
+        if (isPasswordVisible) {
+            // Hide password
+            binding.etPassword.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+        } else {
+            // Show password
+            binding.etPassword.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+        }
+
+        // Move the cursor to the end of the text
+        binding.etPassword.setSelection(binding.etPassword.text.length)
+
+        isPasswordVisible = !isPasswordVisible
     }
 
     fun isInternetAvailable(context: Context): Boolean {
