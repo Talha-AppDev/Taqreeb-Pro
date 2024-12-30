@@ -34,7 +34,7 @@ class DashboardFragment : Fragment() {
         binding = FragmentDashboardBinding.inflate(inflater, container, false)
 
 
-        sessionManager  SessionManager(requireContext())
+        sessionManager = SessionManager(requireContext())
         // Set up the logout button click listener
         binding.btnLogout.setOnClickListener {
             // Perform logout operation
