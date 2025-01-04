@@ -35,11 +35,14 @@ class VerificationActivity : AppCompatActivity() {
     private lateinit var address: String
     private lateinit var category: String
 
+    private lateinit var sessionManager: SessionManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         auth = FirebaseAuth.getInstance()
         db = FirebaseFirestore.getInstance()
+        sessionManager = SessionManager(this)
 
         binding = ActivityVerificationBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -52,6 +55,7 @@ class VerificationActivity : AppCompatActivity() {
         email = intent.getStringExtra("email")!!
         password = intent.getStringExtra("password")!!
         company = intent.getStringExtra("company")!!
+        sessionManager.saveCompanyName(company)
         city = intent.getStringExtra("city")!!
         address = intent.getStringExtra("address")!!
         category = intent.getStringExtra("category")!!

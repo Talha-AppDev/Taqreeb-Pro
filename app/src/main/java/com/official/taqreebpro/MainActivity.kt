@@ -82,6 +82,7 @@ class MainActivity : AppCompatActivity() {
                     if (storedPassword == password) {
                         // Password matches, login successful
                         sessionManager.setLoginState(true)
+                        sessionManager.saveCompanyName(marqueeName)
                         val intent = Intent(this, HomeActivity::class.java)
                         intent.putExtra("company", marqueeName)  // Passing marqueeName to HomeActivity
                         startActivity(intent)

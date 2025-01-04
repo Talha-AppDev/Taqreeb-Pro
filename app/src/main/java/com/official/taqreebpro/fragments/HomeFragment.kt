@@ -1,11 +1,17 @@
 package com.official.taqreebpro.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import com.official.taqreebpro.MainActivity
 import com.official.taqreebpro.R
+import com.official.taqreebpro.SessionManager
+import com.official.taqreebpro.databinding.FragmentDashboardBinding
+import com.official.taqreebpro.databinding.FragmentHomeBinding
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -13,6 +19,9 @@ private const val ARG_PARAM2 = "param2"
 class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var sessionManager: SessionManager
+    private lateinit var binding:FragmentHomeBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +35,14 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        // Inflate the layout for this fragment
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+
+        sessionManager = SessionManager(requireContext())
+        // Set up the logout button click listener
+        binding.tvCompanyName.text = sessionManager.getCompanyName()
+        return binding.root
     }
 
     companion object {

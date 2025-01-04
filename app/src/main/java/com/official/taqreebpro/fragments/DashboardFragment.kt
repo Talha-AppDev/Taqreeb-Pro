@@ -1,4 +1,4 @@
-package com.official.taqreebpro
+package com.official.taqreebpro.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
+import com.official.taqreebpro.MainActivity
+import com.official.taqreebpro.SessionManager
 import com.official.taqreebpro.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -21,8 +23,8 @@ class DashboardFragment : Fragment() {
         super.onCreate(savedInstanceState)
         auth = FirebaseAuth.getInstance()
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+            param1 = it.getString(com.official.taqreebpro.ARG_PARAM1)
+            param2 = it.getString(com.official.taqreebpro.ARG_PARAM2)
         }
     }
 
@@ -34,8 +36,10 @@ class DashboardFragment : Fragment() {
         binding = FragmentDashboardBinding.inflate(inflater, container, false)
 
 
+
         sessionManager = SessionManager(requireContext())
         // Set up the logout button click listener
+        binding.tvCompanyName.text = sessionManager.getCompanyName()
         binding.btnLogout.setOnClickListener {
             // Perform logout operation
             auth.signOut()
@@ -58,8 +62,8 @@ class DashboardFragment : Fragment() {
         fun newInstance(param1: String, param2: String) =
             DashboardFragment().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+                    putString(com.official.taqreebpro.ARG_PARAM1, param1)
+                    putString(com.official.taqreebpro.ARG_PARAM2, param2)
                 }
             }
     }
